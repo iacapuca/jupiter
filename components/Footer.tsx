@@ -1,19 +1,42 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-100">
-      <div className="container px-6 pt-10 pb-6 mx-auto">
-        <div className="flex flex-wrap">
-          <div className="w-full text-center md:w-1/4 md:text-left">
-            <h5 className="mb-6 font-bold uppercase">Ameciclo</h5>
-            <ul className="mb-4">
-              <li className="mt-2"></li>
-              <p className="text-gray-600 hover:underline hover:text-red-600">
-                Ameciclo - Associação Metropolitana de Ciclistas do Recife
-              </p>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <footer className="footer p-10 bg-base-200 text-base-content">
+      <nav>
+        <h6 className="footer-title">Ameciclo</h6>
+        <a className="link link-hover">
+          Ameciclo - Associação Metropolitana de Ciclistas do Recife
+        </a>
+        <a className="link link-hover">+55 (81) 9 3618-2947</a>
+        <a className="link link-hover">
+          R. da Aurora, 529, loja 2 - Santo Amaro, Recife/PE, 50050-145
+        </a>
+        <a className="link link-hover">contato@ameciclo.org</a>
+      </nav>
+      <nav>
+        <h6 className="footer-title">Links</h6>
+        <a className="link link-hover">FAQ</a>
+        <a className="link link-hover">Wiki</a>
+        <a className="link link-hover">Plataforma de Dados</a>
+      </nav>
+      <nav>
+        <h6 className="footer-title">Social</h6>
+        <a className="link link-hover">Facebook</a>
+        <a className="link link-hover">Instagram</a>
+        <a className="link link-hover">Twitter</a>
+        <a className="link link-hover">Youtube</a>
+        <a className="link link-hover">Telegram</a>
+      </nav>
+      <nav>
+        <h6 className="footer-title">Apoio</h6>
+        <a
+          className="link link-hover"
+          href=" https://vercel.com/?utm_source=ameciclo&utm_campaign=oss"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Vercel
+        </a>
+      </nav>
     </footer>
   );
 };
