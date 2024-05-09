@@ -2,6 +2,11 @@ export type Project = {
   id: number;
   name: string;
   slug: string;
+  description: string;
+  status: "ongoing" | "paused" | "finished";
+  media: {
+    url: string;
+  };
 };
 
 export async function generateStaticParams() {
